@@ -1,0 +1,5 @@
+Comparison of Best First Search and A* Search
+
+Best First Search is a greedy strategy that selects the next node purely based on the heuristic (h), which estimates the distance to the goal. As a result, it is fast and memory-efficient, but it does not always guarantee the shortest path. In the given test cases, it successfully found valid paths when possible, but in more complex grids it may get stuck in local minima or take longer detours.
+
+A* Search, on the other hand, uses both the path cost (g) and the heuristic (h), which makes it more reliable. It always finds the optimal (shortest) path if the heuristic is admissible. Although A* is slightly slower than Best First because it explores more nodes, it is more accurate and ensures optimality. In our examples, both algorithms produced the same results because the grids were small, but in larger or more complicated grids, A* will outperform Best First in terms of correctness and path quality.
